@@ -10,11 +10,11 @@ public class SequentialSearch {
      * @param a
      * @return
      */
-    public static Integer SequentialSearch(int[] a){
+    public static Integer sequsentialSearch(int[] a){
         int min = Integer.MAX_VALUE;
         for (int i = 0; i < a.length; i++) {
-            if(a[min] < min){
-                min = a[min];
+            if(a[i] < min){
+                min = a[i];
             }
         }
         return min;
