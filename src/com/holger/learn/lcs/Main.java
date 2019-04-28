@@ -7,8 +7,8 @@ package com.holger.learn.lcs;
 public class Main {
 
     public static void main(String[] args) {
-        String x = "a";
-        String y = "a";
+        String x = "BDCABA";
+        String y = "ABCBDAB";
         System.out.println(Lcs.getLCS(x,y));
     }
 }

@@ -10,9 +10,9 @@ public class Lcs {
     /**
      *         Array(i,j) = 0;                                          当i=0或者j=0;
      *
-     *         Array(i,j) = Array(i-1,j-1);                        当i>0,j>0&&Xi==Yj;
+     *         Array(i,j) = Array(i-1,j-1);                        当i>0,j>0 && Xi==Yj;
      *
-     *         Array(i,j) = max{Array(i-1,j),Array(I,j-1)}         当i>0,j>0&&Xi！=Yj
+     *         Array(i,j) = max{Array(i-1,j),Array(i,j-1)}         当i>0,j>0 && Xi!=Yj
      * @param x
      * @param y
      * @return
