@@ -60,7 +60,8 @@ public class Lcs {
                 i--;
                 j--;
             } else {
-                //如果字符串的字符不同，则在数组中找相同的字符，注意：数组的行列要比字符串中字符的个数大1，因此i和j要各加1
+                //如果字符串的字符不同，则在数组中找相同的字符，
+                // 注意：数组的行列要比字符串中字符的个数大1，因此i和j要各加1
                 if (array[i + 1][j] > array[i][j + 1]) {
                     j--;
                 } else {
@@ -74,6 +75,23 @@ public class Lcs {
             res +=stack.pop();
         }
         return res;
+        /*String res = "";
+        boolean flag = true;
+        int j = 1;
+        int count = 0;
+        for (int i = 1; i < array.length; i++) {
+            while (flag && j < array[i].length){
+                if(count < array[i][j]){
+                    res += s2[j - 1];
+                    count = array[i][j];
+                    flag =false;
+                }
+                j++;
+            }
+            flag = true;
+            j = 1;
+        }
+        return res;*/
     }
 
     public static int max(int a, int b) {//比较(a,b)，输出大的值
