@@ -1,4 +1,4 @@
-package com.holger.learn.最大子串之和;
+package com.holger.learn.数组相关.最大子串之和;
 
 /**
  * @author Holger

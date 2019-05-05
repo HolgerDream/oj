@@ -1,4 +1,4 @@
-package com.holger.learn.旋转数组问题;
+package com.holger.learn.数组相关.旋转数组问题;
 
 /**
  * @author Holger

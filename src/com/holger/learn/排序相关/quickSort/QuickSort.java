@@ -1,4 +1,4 @@
-package com.holger.learn.quickSort;
+package com.holger.learn.排序相关.quickSort;
 
 /**
  * @author Holger

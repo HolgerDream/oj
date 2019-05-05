@@ -1,4 +1,4 @@
-package com.holger.learn.最大公共序列;
+package com.holger.learn.数组相关.最大公共序列;
 
 /**
  * @author Holger
