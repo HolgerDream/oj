@@ -6,7 +6,7 @@ package com.holger.learn.lcs;
  */
 public class MyLcs {
     /**
-     * 核心思想就是缩小问题规模，写出问题的递归程式
+     * 核心思想就是缩小问题规模，状态转移方程
      * 
      *      *         Array(i,j) = 0;                                          当i=0或者j=0;
      *      *
