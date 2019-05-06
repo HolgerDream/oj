@@ -9,7 +9,7 @@ import java.util.List;
  */
 public class StringArrange {
     /**
-     * 递归方式求全排列问题,
+     * 递归方式求全排列问题,首先取第一个，然后再排列后面的字符
      * @param s
      */
     public static String[] arrangeRecursive(String s){
