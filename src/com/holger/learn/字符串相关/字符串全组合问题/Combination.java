@@ -22,7 +22,7 @@ public class Combination {
         char[] c = str.toCharArray();
         StringBuffer sb = new StringBuffer();
         for (int i = 1; i <= c.length; i++) {
-            permutation(c, 0, i, sb,list);
+            permutation(c, 0, i, sb, list);
         }
         return list.toArray(new String[list.size()]);
     }
@@ -44,8 +44,55 @@ public class Combination {
         sb.deleteCharAt(sb.length() - 1);
         //剩下的里面选len个
         permutation(c, begin + 1, len, sb, list);
-
     }
-    
-    
+
+    /**
+     * 利用位运算的方法来获取全部的数
+     *
+     * @param str
+     * @return
+     */
+    public static String[] subset(String str) {
+        List<String> list = new ArrayList<>();
+        char[] array = str.toCharArray();
+        int n = 1 << array.length;
+        for (int i = 1; i < n; i++) {
+            int j = 1 << (array.length - 1);
+            int count = 0;
+            String s = "";
+            while (j >= 1) {
+                if ((i & j) != 0) {
+                    s += array[array.length - 1 - count];
+                }
+                count++;
+                j >>= 1;
+            }
+            list.add(s);
+        }
+        return list.toArray(new String[list.size()]);
+    }
+
+    /**
+     * 位运算方法二
+     * @param str
+     * @return
+     */
+    public static String[] subset2(String str) {
+        List<String> list = new ArrayList<>();
+        char[] array = str.toCharArray();
+        int n = array.length;
+        for (int i = 1; i < (1 << n); i++) {
+            String s = "";
+            
+            for (int j = 0; j < n; j++) {
+                if ((i & (1 << j)) != 0) {
+                    s += array[j];
+                }
+            }
+            list.add(s);
+        }
+        return list.toArray(new String[list.size()]);
+    }
+
+
 }
