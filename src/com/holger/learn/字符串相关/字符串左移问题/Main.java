@@ -8,5 +8,6 @@ public class Main {
     public static void main(String[] args) {
         String test="Hello World!";
         System.out.println(LeftMoving.leftMoving(test,2));
+        System.out.println(SwapMoving.swapMoving(test,2));
     }
 }
