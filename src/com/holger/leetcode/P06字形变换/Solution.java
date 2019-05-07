@@ -8,6 +8,12 @@ import java.util.List;
  * @date 2019/1/18
  */
 public class Solution {
+    /**
+     * 利用一个二维数组将元素全部存入，然后遍历二维数组
+     * @param s
+     * @param numRows
+     * @return
+     */
     public static String convert(String s, int numRows) {
         //判断异常输入
         if (s == null || s.isEmpty() || numRows < 2) {

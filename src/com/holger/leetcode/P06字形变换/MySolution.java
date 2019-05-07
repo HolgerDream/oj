@@ -8,6 +8,12 @@ import java.util.List;
  * @date 2019/5/7
  */
 public class MySolution {
+    /**
+     * 因为二维数组中遍历，行是一样的，那么也就是说可以直接往下在往上走，存入对应的行即可
+     * @param s
+     * @param numRows
+     * @return
+     */
     public static String convert(String s, int numRows) {
         if(numRows == 1){
             return s;
