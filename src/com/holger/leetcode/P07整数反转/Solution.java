@@ -1,4 +1,4 @@
-package com.holger.leetcode.P07leetcode;
+package com.holger.leetcode.P07整数反转;
 
 /**
  * @author Holger
