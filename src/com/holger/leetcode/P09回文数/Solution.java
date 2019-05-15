@@ -44,6 +44,6 @@ public class Solution {
             x /= 10;
         }
 
-        return revent == x / 10 || revent == x;
+        return revent/10 == x || revent == x;
     }
 }

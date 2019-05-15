@@ -7,5 +7,6 @@ package com.holger.leetcode.P09回文数;
 public class Main {
     public static void main(String[] args) {
         System.out.println(new Solution().isPalindrome(-121));
+        System.out.println(new Solution().isPalindrome2(121));
     }
 }
