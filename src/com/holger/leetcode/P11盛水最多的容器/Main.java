@@ -6,7 +6,7 @@ package com.holger.leetcode.P11盛水最多的容器;
  */
 public class Main {
     public static void main(String[] args) {
-        int[] test = {1,8,6,2,5,4,8,3,7};
-        System.out.println(new Solution1().maxArea(test));
+        int[] test = {1,1};
+        System.out.println(new Solution().maxArea(test));
     }
 }
